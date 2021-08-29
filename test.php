@@ -32,7 +32,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 	
 	
 	
-	$insert_query = "insert into 						       			user_info(First_Name,Last_Name,Email,Date_of_Birth,Mobile,Designation,Gender,Hobbies)
+	$insert_query = "insert into user_info(First_Name,Last_Name,Email,Date_of_Birth,Mobile,Designation,Gender,Hobbies)
 						values('$fname','$lname','$email','$dob','$phone','$design',
 						'$gender','$hobbies')";
 						$insert_query_run = $conn->prepare($insert_query);
@@ -141,12 +141,12 @@ input[type=submit]:hover {
 <form method = "post">
 
 <div class = "row">
-<div class = "col-label">
-<label>First Name:</label>
-</div>
-<div class = "col-input" >
-<input type="text" name="fname">
-</div>
+ <div class = "col-label">
+   <label>First Name:</label>
+ </div>
+ <div class = "col-input" >
+   <input type="text" name="fname">
+ </div>
 </div>
 
 <div class = "row">
